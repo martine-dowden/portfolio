@@ -73,3 +73,17 @@ h1 {
   padding: 1.5rem;
   z-index: 1;
 }
+
+.background {
+  background-image: url('/assets/img/flower.svg');
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 15rem;
+  top: 0;
+  left: 0;
+  right: 1rem;
+  bottom: 1rem;
+  opacity: .20;
+  z-index: -1;
+}

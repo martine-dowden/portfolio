@@ -8,15 +8,13 @@ h1 { margin-bottom: 1rem; }
 
 .background {
   background-image: url('../../../assets/img/flower.svg');
-  background-size: contain;
+  background-size: 20rem;
   background-repeat: no-repeat;
   background-position: right bottom;
-  width: 10rem;
-  height: 10rem;
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  opacity: .30;
+  opacity: .15;
   z-index: -1;
 }
 

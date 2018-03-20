@@ -8,8 +8,8 @@
     </button>
 
     <mat-menu #appMenu="matMenu" class="dropdown-menu">
-        <button mat-menu-item>Samples</button>
-        <button mat-menu-item>Publications</button>
+        <button (click)="navigate('samples')" mat-menu-item>Samples</button>
+        <button (click)="navigate('publications')" mat-menu-item>Publications</button>
       </mat-menu>
 
     <ul>
