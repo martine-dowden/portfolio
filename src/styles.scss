@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+@import '/assets/scss/theme';
+@import '/assets/scss/mixins';
+
+* { box-sizing: border-box; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: $background;
+  padding: 0;
+  margin:0;
+}
+
+.main {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: darken($accent, 20%);
+}
+
+a:hover,
+a:focus {
+  color: $accent;
+  text-decoration: underline;
+}
+
+.active {
+  color: darken($accent, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
+}
+
+h1 {
+  padding: 0;
+  margin: 1.5rem 1.5rem 0;
+}
+
+.content {
+  padding: 1.5rem;
+  z-index: 1;
+}

@@ -1,0 +1,32 @@
+
+.content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content:last-of-type {
+  padding-top: .5rem;
+}
+
+.content > ul {
+  padding-left: 0;
+  & > li {
+    display: block;
+    padding: .75rem;
+    a, div {
+      display: block;
+      font-weight: bold;
+      font-size: 1.0625rem;
+    }
+    span { display: block; }
+    span:first-of-type {
+      font-style: oblique;
+      font-size: .875rem;
+      margin-bottom: .0625rem;
+    }
+  }
+}
+
+.pub {
+  background: white;
+}

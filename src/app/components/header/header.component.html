@@ -1,0 +1,20 @@
+<header>
+  <div class="name">
+    <a [routerLink]="['/']">Martine Dowden</a>
+  </div>
+  <nav>
+    <button mat-button type="button" [matMenuTriggerFor]="appMenu">
+      <i aria-label="menu" class="material-icons">menu</i>
+    </button>
+
+    <mat-menu #appMenu="matMenu" class="dropdown-menu">
+        <button mat-menu-item>Samples</button>
+        <button mat-menu-item>Publications</button>
+      </mat-menu>
+
+    <ul>
+      <li><a [routerLink]="['samples']">Samples</a></li>
+      <li><a [routerLink]="['publications']">Publications</a></li>
+    </ul>
+  </nav>
+</header>

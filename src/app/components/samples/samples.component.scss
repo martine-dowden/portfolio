@@ -1,0 +1,121 @@
+@import '../../../assets/scss/mixins';
+
+.sample {
+  background: #fafafa;
+  border: solid 1px lighten($primary, 33%);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img { max-width: 66%; }
+  p { text-align: left; }
+  margin-bottom: 1rem;
+}
+
+.design {
+  .design-sample {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: .5rem;
+    border: solid 1px lighten($primary, 33%);
+  }
+}
+
+.brand img {
+  padding: 2rem;
+  background: white;
+}
+
+.code { background: lighten($accent, 35%); }
+.branding { background: white; }
+
+h1 { margin-bottom: 1rem; }
+h2 { margin-top: 0; }
+
+@media (min-width: 500px) {
+  .samples {
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      flex-basis: 32%;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+    }
+    img {
+      height: 10rem;
+    }
+  }
+
+  .design > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .design-sample {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 48%;
+      flex-grow: 0;
+    }
+    .sketch {
+      flex-basis: 40%;
+    }
+    .thumbnails {
+      flex-basis: 18%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    .illustrations {
+      flex-basis: 35%;
+    }
+
+    .brand {
+      flex-basis: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 0;
+      margin-bottom: 3rem;
+      img {
+        flex-grow: 0;
+        flex-shrink: 1;
+        border: none;
+        background: none;
+        padding: 0;
+      }
+      img:first-of-type {
+        flex-basis: 70%;
+        max-width: 70%;
+      }
+      img:last-of-type {
+        flex-basis: 20%;
+        max-width: 20%;
+      }
+      &.sod img:first-of-type {
+        flex-basis: 25%;
+        max-width: 25%;
+      }
+    }
+
+    &.flexepark-artifacts {
+      div.brand {
+        img:first-of-type,
+        img:last-of-type {
+          flex-basis: 45%;
+          max-width: 45%;
+        }
+      }
+    }
+  }
+
+  
+
+}
+

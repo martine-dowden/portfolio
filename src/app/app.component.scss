@@ -1,0 +1,13 @@
+.background {
+  background-image: url('/assets/img/flower.svg');
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 15rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .20;
+  z-index: -1;
+}
