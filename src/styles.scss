@@ -3,6 +3,9 @@
 @import '/assets/scss/mixins';
 
 * { box-sizing: border-box; }
+*:focus {
+  outline: none;
+}
 
 .material-icons {
   font-family: 'Material Icons';
@@ -58,6 +61,7 @@ h1 {
   margin: 1.5rem 1.5rem 0;
   padding: 0;
   text-align: center;
+  font-size: 3.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -108,7 +112,6 @@ a:focus {
   opacity: .20;
   z-index: -1;
 }
-
 
 // Custom scroll bar
 /* width */

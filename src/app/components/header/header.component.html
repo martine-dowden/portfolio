@@ -11,14 +11,14 @@
     </button>
 
     <mat-menu #appMenu="matMenu" class="dropdown-menu">
-        <button (click)="navigate('/')" mat-menu-item>About</button>
-        <button (click)="navigate('samples')" mat-menu-item>Samples</button>
+        <button (click)="navigate('about')" mat-menu-item>About</button>
+        <button (click)="navigate('portfolio')" mat-menu-item>Portfolio</button>
         <button (click)="navigate('publications')" mat-menu-item>Publications</button>
       </mat-menu>
 
     <ul>
-      <li><a routerLinkActive="active" [routerLink]="['/']">About</a></li>
-      <li><a routerLinkActive="active" [routerLink]="['samples']">Samples</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['about']">About</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['portfolio']">Portfolio</a></li>
       <li><a routerLinkActive="active" [routerLink]="['publications']">Publications</a></li>
     </ul>
   </nav>

@@ -5,8 +5,9 @@ import { SamplesComponent } from './components/samples/samples.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 
 const routes: Routes = [
-  { path: '', component: AboutComponent },
-  { path: 'samples', component: SamplesComponent },
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'about', component: AboutComponent },
+  { path: 'portfolio', component: SamplesComponent },
   { path: 'publications', component: PublicationsComponent },
 ];
 

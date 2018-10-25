@@ -1,39 +1,20 @@
-<h1>Samples</h1>
+<h1>Portfolio</h1>
 
 <div class="content code">
-  <h2>Code</h2>
-  <div class="samples">
-    <div class="sample">
-      <div>
-        <img src="assets/img/css.svg" alt="">
-        <h3 class="title">.css &#123; display: what? &#125;</h3>
-        <p>Demo of the different values for the css display property</p>
-      </div>
-      <div class="links">
-        <a href="https://github.com/martine-dowden/display-what" target="_blank" rel="noopener">Repository</a>
-        <a href="https://martine-dowden.github.io/display-what/index.html" target="_blank" rel="noopener">Demo Site</a>
-      </div>
-    </div>
-    <div class="sample">
-      <div>
-        <img src="assets/img/fireside.svg" alt="">
-        <h3 class="title">Playing With Fire</h3>
-        <p>Firebase Workshop</p>
-      </div>
-      <div class="links">
-        <a href="https://github.com/Mx3-Studio" target="_blank" rel="noopener">Repositories</a>
-        <a href="http://playingwithfire.live/" target="_blank" rel="noopener">Demo Site</a>
-      </div>
-    </div>
-    <div class="sample">
-      <div>
-        <img src="assets/img/cookbook.svg" alt="">
-        <h3 class="title">Accessibility Cookbook: 10 Easy Recipes</h3>
-        <p>Accessibility Demo Site</p>
-      </div>
-      <div class="links">
-        <a href="https://github.com/martine-dowden/accessibility-cookbook" target="_blank" rel="noopener">Repository</a>
-        <a href="https://martine-dowden.github.io/accessibility-cookbook/#/home" target="_blank" rel="noopener">Demo Site</a>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div *ngFor="let project of projects" class="project" [ngClass]="{'flipped': project.flipped }">
+      <div class="inner-container">
+        <div class="front">
+          <img [src]="project.icon" [alt]="project.name">
+        </div>
+        <div class="back">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <div class="links">
+            <a *ngFor="let link of project.links" [href]="link.href" rel="noopener" target="_blank">{{link.text}}</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +47,7 @@
       <img src="assets/img/branding/mobilify.png">
       <img src="assets/img/branding/mobilify-icon.png">
     </div>
-    
+
     <div class="design-sample brand">
       <img src="assets/img/branding/tekyn.png">
       <img src="assets/img/branding/t.png">
@@ -78,7 +59,7 @@
       <img src="assets/img/sod_logo.svg">
       <img src="assets/img/sod_icon.svg">
     </div>
-    
+
     <div class="design-sample brand">
       <img src="assets/img/librum-logo.svg">
       <img src="assets/img/librum_arcanum.svg">
@@ -91,7 +72,7 @@
       <img src="assets/img/horzontal-flexe.svg">
       <img src="assets/img/package_logo-color.svg">
     </div>
-    
+
     <div class="design-sample brand">
       <img src="assets/img/road.svg">
       <img src="assets/img/flexepark_car.svg">
@@ -103,12 +84,10 @@
       <img src="assets/img/community2.svg">
       <img src="assets/img/lot2.svg">
     </div>
-    
+
     <div class="design-sample brand">
       <img src="assets/img/community.svg">
       <img src="assets/img/lot.svg">
     </div>
   </div>
 </div>
-
-

@@ -1,17 +1,59 @@
 @import '../../../assets/scss/mixins';
 
-.sample {
-  background: #fafafa;
-  border: solid 1px lighten($primary, 33%);
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  img { max-width: 66%; }
-  p { text-align: left; }
-  margin-bottom: 1rem;
+.projects {
+  .project {
+    height: 15.5rem;
+    width: 15.5rem;
+    margin: 0 auto 1rem;
+    position: relative;
+    perspective: 1000px;
+    background-color: transparent;
+  }
+  img {
+    width: 10rem;
+    display: block;
+  }
+  .links {
+    a:not(:last-of-type):after {
+      content: " - ";
+    }
+  }
 }
+
+.project:hover .inner-container {
+  transform: rotateY(180deg);
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fafafa;
+  border: solid 1px $primary;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.back {
+  transform: rotateY(180deg);
+}
+
 
 .design {
   .design-sample {
@@ -29,30 +71,22 @@
   background: white;
 }
 
-.code { background: lighten($accent, 35%); }
-.branding { background: white; }
 
 h1 { margin-bottom: 1rem; }
 h2 { margin-top: 0; }
 
 @media (min-width: 500px) {
-  .samples {
+
+  .projects {
     display: flex;
     justify-content: space-between;
-    & > div {
-      flex-basis: 32%;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-    .links {
-      display: flex;
-      justify-content: space-between;
-    }
-    img {
-      height: 10rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .project {
+      margin-bottom: 2rem;
     }
   }
-
+  
   .design > div {
     display: flex;
     justify-content: space-between;
