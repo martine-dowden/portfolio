@@ -1,6 +1,9 @@
 <header>
   <div class="name">
-    <a [routerLink]="['/']">Martine Dowden</a>
+    <a [routerLink]="['/']">
+      <img src="/assets/img/brand/flower-color.svg" alt="" />
+      Martine Dowden
+    </a>
   </div>
   <nav>
     <button mat-button type="button" [matMenuTriggerFor]="appMenu">
@@ -8,13 +11,15 @@
     </button>
 
     <mat-menu #appMenu="matMenu" class="dropdown-menu">
+        <button (click)="navigate('/')" mat-menu-item>About</button>
         <button (click)="navigate('samples')" mat-menu-item>Samples</button>
         <button (click)="navigate('publications')" mat-menu-item>Publications</button>
       </mat-menu>
 
     <ul>
-      <li><a [routerLink]="['samples']">Samples</a></li>
-      <li><a [routerLink]="['publications']">Publications</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['/']">About</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['samples']">Samples</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['publications']">Publications</a></li>
     </ul>
   </nav>
 </header>

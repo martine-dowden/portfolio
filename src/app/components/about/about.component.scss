@@ -1,31 +1,29 @@
 @import '../../../assets/scss/mixins';
 
-h1 { margin-bottom: 1rem; }
-
 .skills-list {
   position: relative;
 }
 
-.background {
-  background-image: url('../../../assets/img/flower.svg');
-  background-size: 20rem;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  opacity: .15;
-  z-index: -1;
-}
-
 .bio {
-  background: #fafafa;
-  h2 { margin-top: 0; }
-  img {
-    border-radius: 50%;
-    max-width: 10rem;
-    margin-right: .75rem;
+  a {
+    font-weight: 600;
+  }
+  p {
+    line-height: 1.75rem;
+    text-align: justify;
+  }
+  h2 { 
+    margin-top: 0; 
     float: left;
+  }
+  img {
+    width: 15rem;
+    margin-left: -2rem;
+    margin-right: .5rem;
+    float: left;
+    shape-outside: url(../../../assets/img/flower.svg);
+    shape-margin: .5rem;
+    shape-image-threshold: 0.7;
   }
 }
 
@@ -45,22 +43,17 @@ h1 { margin-bottom: 1rem; }
     border-radius: 50%;
   }
   .closed {
-    background-color: lighten($primary, 25%);
+    background-color: lighten($primary, 15%);
   }
 }
 
-.project-list {
-  background: lighten($accent, 35%);
-}
 
 .projects {
   & > div {
-    border: solid 1px lighten($primary, 35%);
     padding: 1.25rem;
     border-radius: 3px;
     margin-bottom: 1rem;
     text-align: center;
-    background: #fafafa;
     img {
       width: 66%;
     }
@@ -94,6 +87,11 @@ h1 { margin-bottom: 1rem; }
       flex-grow: 0;
       flex-shrink: 0;
     }
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

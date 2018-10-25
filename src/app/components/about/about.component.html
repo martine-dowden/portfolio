@@ -1,20 +1,21 @@
 <h1>About</h1>
 
 <div class="content bio">
-  <img src="assets/img/martine-dowden.png" alt="photo of Martine Dowden">
+  <!-- <img src="assets/img/martine-dowden.png" alt="photo of Martine Dowden"> -->
   <div class="text">
     <h2>Bio</h2>
+    <img src="/assets/img/flower.svg" alt="" class="shape"/>
     <p>Focusing on web interfaces that are beautiful, functional, and usable, Martine delivers products that adhere to WCAG
       2.0 and Section 508 for accessibility and compliance. She approaches User Experience from both Art and Science, drawing
       from her degrees in Psychology and Visual Communications. Martine has worked as an artist, educator, and consultant
       since 2005.</p>
     <p>She stays active in the industry, teaching new developers at Eleven Fifty Academy, attending and speaking at conferences
-      and meetups, and publishing the occasional blog. In 2015 Martine's children's book "Programming Languages ABC++" was
+      and meetups, and publishing the occasional blog. In 2015 Martine's children's book <a href="https://inedo.com/abc" target="_blank">Programming Languages ABC++</a> was
       published by Inedo, and in 2016 the Workbook Edition sold over 20,000 copies.</p>
   </div>
 </div>
 
-<div class="content project-list">
+<!-- <div class="content project-list">
   <h2>Projects</h2>
   <div class="projects">
     <div>
@@ -30,10 +31,17 @@
       <h3><a href="https://www.shiftsondemand.com/" target="_blank" rel="noopener">Shifts On Demand</a></h3>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="content skills-list">
-  <h2>Skills</h2>
+  <div class="title">
+    <h2>Skills</h2>
+    <mat-form-field appearance="outline">
+      <mat-label>Filter Skills</mat-label>
+      <input #filterVal matInput placeholder="..." (keyup)="filter(filterVal.value)">
+      <mat-icon matSuffix>filter_list</mat-icon>
+    </mat-form-field>
+  </div>
   <div class="skills">
     <div *ngFor="let skill of skills" class="skill">
       <div>{{skill.name}}</div>
@@ -43,7 +51,6 @@
       </div>
     </div>
   </div>
-  <div class="background"></div>
 </div>
 
 

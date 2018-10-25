@@ -1,15 +1,37 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: .25rem 1rem;
+  padding: 0 1rem;
+  height: 72px;
 }
 
 .name {
-  background: url('/assets/img/flower.svg');
-  background-repeat: no-repeat;
-  padding: 1.5rem 0 1.5rem 2.5rem;
+  padding: 0;
+  a {
+    transition: none;
+  }
+  a:hover,
+  a:focus {
+    border: none;
+    img {
+      animation: spin 250ms ease-in-out 1;
+    }
+  }
+  img {
+    width: 2rem;
+    vertical-align: middle;
+  }
 }
 
 ul { display: none; }
@@ -23,7 +45,7 @@ ul { display: none; }
   ul {
     display: flex;
     padding-left: 0;
-    margin: 0 -1rem;
+    margin: 0;
   }
   
   li {

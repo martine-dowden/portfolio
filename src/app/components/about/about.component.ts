@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-about',
@@ -9,17 +10,18 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  skills = [
+  skills;
+  skillsList = [
       { name: 'User Experience', value: 4},
       { name: 'Usability', value: 4},
       { name: 'Accessibility', value: 4},
       { name: 'WAI-ARIA', value: 4},
-      { name: 'WCAG', value: 4},
+      { name: 'WCAG', value: 5},
       { name: 'Section 508', value: 4},
       { name: 'Git', value: 4},
       { name: 'AngularJS', value: 5},
-      { name: 'Angular2', value: 5},
-      { name: 'React', value: 2},
+      { name: 'Angular', value: 5},
+      { name: 'React', value: 3},
       { name: 'HTML5', value: 5},
       { name: 'CSS', value: 5},
       { name: 'LESS & SASS', value: 5},
@@ -52,10 +54,31 @@ export class AboutComponent implements OnInit {
   ];
 
   ngOnInit() {
+    this.skills = _.cloneDeep(this.skillsList);
   }
 
   getNum(val) {
     return new Array(val);
+  }
+
+  filter(val) {
+    console.log(val);
+    const superset = _.cloneDeep(this.skillsList);
+    if (val) {
+      const cleanVal = val.toLowerCase().trim();
+      this.skills = _.filter(superset, skill => this.arrayContainsArray(skill.name.toLowerCase().split(''), cleanVal.split('')));
+    } else {
+      this.skills = superset;
+    }
+  }
+
+  arrayContainsArray (superset, subset) {
+    if (0 === subset.length) {
+      return false;
+    }
+    return subset.every(function (value) {
+      return (superset.indexOf(value) >= 0);
+    });
   }
 
 }
