@@ -29,7 +29,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 250ms;
   transform-style: preserve-3d;
 }
 
@@ -55,7 +55,12 @@
 }
 
 
+
 .design {
+  h3 {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+  }
   .design-sample {
     text-align: center;
   }

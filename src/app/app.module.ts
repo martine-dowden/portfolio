@@ -19,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SamplesComponent } from './components/samples/samples.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CaseStudyComponent } from './components/case-study/case-study.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     SamplesComponent,
     PublicationsComponent,
-    FooterComponent
+    FooterComponent,
+    CaseStudyComponent
   ],
   imports: [
     BrowserModule,

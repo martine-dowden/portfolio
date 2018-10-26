@@ -12,7 +12,6 @@ export class AboutComponent implements OnInit {
 
   skills;
   skillsList = [
-      
       { name: 'Angular', value: 5},
       { name: 'AngularJS', value: 5},
       { name: 'Accessibility', value: 4},
