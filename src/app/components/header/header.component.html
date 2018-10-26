@@ -12,14 +12,16 @@
 
     <mat-menu #appMenu="matMenu" class="dropdown-menu">
         <button (click)="navigate('about')" mat-menu-item>About</button>
-        <button (click)="navigate('portfolio')" mat-menu-item>Portfolio</button>
+        <button (click)="navigate('projects')" mat-menu-item>Projects</button>
+        <button (click)="navigate('graphics')" mat-menu-item>Graphics</button>
         <button (click)="navigate('case-study')" mat-menu-item>Case Study</button>
         <button (click)="navigate('publications')" mat-menu-item>Publications</button>
       </mat-menu>
 
     <ul>
       <li><a routerLinkActive="active" [routerLink]="['about']">About</a></li>
-      <li><a routerLinkActive="active" [routerLink]="['portfolio']">Portfolio</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['projects']">Projects</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['graphics']">Graphics</a></li>
       <li><a routerLinkActive="active" [routerLink]="['case-study']">Case Study</a></li>
       <li><a routerLinkActive="active" [routerLink]="['publications']">Publications</a></li>
     </ul>

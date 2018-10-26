@@ -1,0 +1,9 @@
+<div class="design">
+  <div class="logo-container">
+    <div class="side"></div>
+    <h2>Graphics</h2>
+    <div class="logo" *ngFor="let g of graphics">
+      <img [alt]="g.name" [src]="g.url" />
+    </div>
+  </div>
+</div>

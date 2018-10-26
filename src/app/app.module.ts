@@ -20,6 +20,7 @@ import { SamplesComponent } from './components/samples/samples.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CaseStudyComponent } from './components/case-study/case-study.component';
+import { GraphicsComponent } from './components/graphics/graphics.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CaseStudyComponent } from './components/case-study/case-study.component
     SamplesComponent,
     PublicationsComponent,
     FooterComponent,
-    CaseStudyComponent
+    CaseStudyComponent,
+    GraphicsComponent
   ],
   imports: [
     BrowserModule,
