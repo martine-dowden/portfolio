@@ -12,7 +12,7 @@
           <h3>{{ project.name }}</h3>
           <p>{{ project.description }}</p>
           <div class="links">
-            <a *ngFor="let link of project.links" [href]="link.href" rel="noopener" target="_blank">{{link.text}}</a>
+            <span *ngFor="let link of project.links"><a [href]="link.href" rel="noopener" target="_blank">{{link.text}}</a></span>
           </div>
         </div>
       </div>

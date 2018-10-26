@@ -9,12 +9,12 @@ import { SpeakingComponent } from './components/speaking/speaking.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: SamplesComponent },
-  { path: 'publications', component: PublicationsComponent },
-  { path: 'case-study', component: CaseStudyComponent },
-  { path: 'graphics', component: GraphicsComponent },
-  { path: 'speaking', component: SpeakingComponent },
+  { path: 'about', component: AboutComponent, data: { state: 'about'} },
+  { path: 'projects', component: SamplesComponent, data: { state: 'projects'} },
+  { path: 'graphics', component: GraphicsComponent, data: { state: 'graphics'} },
+  { path: 'case-study', component: CaseStudyComponent, data: { state: 'case-study'} },
+  { path: 'publications', component: PublicationsComponent, data: { state: 'publications'} },
+  { path: 'speaking', component: SpeakingComponent, data: { state: 'speaking'} },
 ];
 
 @NgModule({
