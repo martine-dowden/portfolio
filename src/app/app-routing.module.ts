@@ -5,6 +5,7 @@ import { SamplesComponent } from './components/samples/samples.component';
 import { PublicationsComponent } from './components/publications/publications.component';
 import { CaseStudyComponent } from './components/case-study/case-study.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
+import { SpeakingComponent } from './components/speaking/speaking.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'publications', component: PublicationsComponent },
   { path: 'case-study', component: CaseStudyComponent },
   { path: 'graphics', component: GraphicsComponent },
+  { path: 'speaking', component: SpeakingComponent },
 ];
 
 @NgModule({

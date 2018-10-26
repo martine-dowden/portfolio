@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AboutComponent } from './components/about/about.component';
 import { SamplesComponent } from './components/samples/samples.component';
@@ -21,6 +22,7 @@ import { PublicationsComponent } from './components/publications/publications.co
 import { FooterComponent } from './components/footer/footer.component';
 import { CaseStudyComponent } from './components/case-study/case-study.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
+import { SpeakingComponent } from './components/speaking/speaking.component';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { GraphicsComponent } from './components/graphics/graphics.component';
     PublicationsComponent,
     FooterComponent,
     CaseStudyComponent,
-    GraphicsComponent
+    GraphicsComponent,
+    SpeakingComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { GraphicsComponent } from './components/graphics/graphics.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
