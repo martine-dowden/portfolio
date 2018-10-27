@@ -23,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CaseStudyComponent } from './components/case-study/case-study.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { SpeakingComponent } from './components/speaking/speaking.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SpeakingComponent } from './components/speaking/speaking.component';
     FooterComponent,
     CaseStudyComponent,
     GraphicsComponent,
-    SpeakingComponent
+    SpeakingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

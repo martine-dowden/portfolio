@@ -6,6 +6,9 @@ footer {
   border-top: solid 1px lighten($primary, 33%);
   background: #fafafa;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -21,4 +24,8 @@ a:focus {
 
 img {
   width: 1.75rem;
+}
+
+p {
+  font-family: 'Pacifico', cursive;
 }

@@ -6,9 +6,10 @@ import { PublicationsComponent } from './components/publications/publications.co
 import { CaseStudyComponent } from './components/case-study/case-study.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { SpeakingComponent } from './components/speaking/speaking.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: '', component: HomeComponent, data: { state: 'home'} },
   { path: 'about', component: AboutComponent, data: { state: 'about'} },
   { path: 'projects', component: SamplesComponent, data: { state: 'projects'} },
   { path: 'graphics', component: GraphicsComponent, data: { state: 'graphics'} },
