@@ -33,7 +33,7 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
-      link: 'https://www.pluralsight.com/guides/styling-when-encapsulated-in-angular"',
+      link: 'https://www.pluralsight.com/guides/styling-when-encapsulated-in-angular',
       linkText: 'Styling Web Components',
       publisher: 'Pluralsight',
       year: '2018',
