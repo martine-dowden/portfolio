@@ -31,19 +31,19 @@ export class PresentationComponent implements OnInit, OnDestroy {
     switch (id) {
       case 'display-what':
         this.title = '.CSS { display: what? }';
-        this.url = 'http://bit.ly/display-what';
+        this.url = 'https://bit.ly/display-what';
         break;
       case 'fantastic-forms':
         this.title = 'Fabricating Fantastic Forms';
-        this.url = 'http://bit.ly/fantastic-forms';
+        this.url = 'https://bit.ly/fantastic-forms';
         break;
       case 'psych-of-design':
         this.title = 'Not Just My Opinion';
-        this.url = 'http://bit.ly/psych-of-design';
+        this.url = 'https://bit.ly/psych-of-design';
         break;
       case 'care-feeding':
         this.title = 'Care And Feeding of your Developers';
-        this.url = 'http://bit.ly/care-feeding';
+        this.url = 'https://bit.ly/care-feeding';
         break;
     }
   }
