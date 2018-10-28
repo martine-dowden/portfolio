@@ -1,8 +1,41 @@
-<h1>{{ title }}</h1>
-<div *ngIf="!url" class="loader">
-  <img src="assets/img/brand/flower-color-animated.svg" alt="">
-  <p>Loading...</p>
-</div>
-<div class="resp-container" *ngIf="url">
-  <iframe [src]="sanitize(url)" frameborder="0" class="resp-iframe" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<div class="container">
+  <h1>{{ title }}</h1>
+  <div [ngSwitch]="presentationId" class="abstract">
+    <div *ngSwitchCase="'display-what'">
+      <p>As if css wasn't tricky enough as it was, they had to go and add all this new stuff to it like grid and flex… now which one am i supposed to use?</p>
+      <p>To make matters worse, all of the new css layout techniques use primarily the display property which now has over 40 possible values.</p>
+      <p>In this talk we will look at the history of the display property and ways you can use it to display, hide, and layout content.</p>
+    </div>
+    <div *ngSwitchCase="'fantastic-forms'">
+      <p>A developer staple: the CRUD app. We all write them, and they all contain forms. Lots of forms.</p>
+      <p>In this talk you will learn how to make those forms more user friendly by delving into:</p>
+      <ul>
+        <li>UX techniques to guide the user</li>
+        <li>Accessibility considerations and testing</li>
+        <li>Form validation</li>
+        <li>Error handling</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'psych-of-design'">
+      <p>Have you ever heard the phrases “beauty is in the eye of the beholder” or “I like what I like” when someone is dismissing your design?  Too often good designs are dismissed for aesthetic differences instead of appreciated for its intrinsic value.</p>
+      <p>Many features of good design are objective, not subjective, and can be either qualified or quantified with predictable results.</p>
+      <p>Together we will delve into the psychology, physiology, and mathematics of design principles for two key purposes:</p>
+      <ul>
+        <li>Validating our designs</li>
+        <li>Convincing others of the value and validity of our designs</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'care-feeding'">
+      <p>We all understand the value of focusing on User Experience when designing products and services. Costs go down, revenues go up, satisfaction and efficiency both increase while errors and complaints decrease.</p>
+      <p>But are you sure that you have identified all of your users? For most companies, there is a major category of people that are often overlooked: Software Developers. Developers are users of many systems within an organization: databases, web services, web hosting, authentication providers, and more. However unlike most users, developers depend most on the environments that are considered non-production, and the direct and indirect costs of outages are rarely considered.</p>
+      <p>What is the impact of equipping a developer with a $1,000 laptop instead of a $5,000 multi-screen rig? What happens to your product development when one of your developers quits and a new person joins the team? How can you support developers that write clean, maintainable code?</p>
+      <p>We will look at best practices for supporting the developer experience, including documentation, processes, tools, and supporting systems.      </p>
+    </div>
+    <div *ngSwitchDefault>
+      <pre> presenationId = {{ presentationId }} not found</pre>
+    </div>
+  </div>
+  <div class="resp-container" *ngIf="url">
+    <iframe [src]="sanitize(url)" frameborder="0" class="resp-iframe" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
 </div>
