@@ -18,6 +18,7 @@ import { GraphicsComponent } from './components/graphics/graphics.component';
 import { SpeakingComponent } from './components/speaking/speaking.component';
 import { HomeComponent } from './components/home/home.component';
 import { MaterialModule } from './material/material.module';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MaterialModule } from './material/material.module';
     CaseStudyComponent,
     GraphicsComponent,
     SpeakingComponent,
-    HomeComponent
+    HomeComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,

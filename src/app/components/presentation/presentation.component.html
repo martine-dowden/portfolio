@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<div *ngIf="!url" class="loader">
+  <img src="assets/img/brand/flower-color-animated.svg" alt="">
+  <p>Loading...</p>
+</div>
+<div class="resp-container" *ngIf="url">
+  <iframe [src]="sanitize(url)" frameborder="0" class="resp-iframe" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>

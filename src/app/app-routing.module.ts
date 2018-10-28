@@ -7,6 +7,7 @@ import { CaseStudyComponent } from './components/case-study/case-study.component
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { SpeakingComponent } from './components/speaking/speaking.component';
 import { HomeComponent } from './components/home/home.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: { state: 'home'} },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'case-study', component: CaseStudyComponent, data: { state: 'case-study'} },
   { path: 'publications', component: PublicationsComponent, data: { state: 'publications'} },
   { path: 'speaking', component: SpeakingComponent, data: { state: 'speaking'} },
+  { path: 'presentation/:id', component: PresentationComponent, data: { state: 'presentation'} },
 ];
 
 @NgModule({

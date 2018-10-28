@@ -1,37 +1,23 @@
 <h1>Publications</h1>
+
 <div class="pub">
+  <div class="chips">
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of chips" selectable [selected]="chip.selected" (click)="onSelect(chip)">
+        {{ chip.text }}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
   <ul>
-    <li>
-      <a href="https://www.pluralsight.com/guides/styling-when-encapsulated-in-angular" target="_blank" rel="noopener">
-        Styling Web Components
+    <li *ngFor="let pub of publications">
+      <a *ngIf="pub.type !== 'presentation'" [href]="pub.link" target="_blank" rel="noopener">
+        {{ pub.linkText }}
       </a>
-      <span>Pluralsight</span>
-      <span>2018</span>
-    </li>
-    <li>
-      <a href="https://www.pluralsight.com/guides/css-encapsulation-in-angular" target="_blank" rel="noopener">
-        CSS Encapsulation in Angular
+      <a *ngIf="pub.type === 'presentation'" [routerLink]="['/presentation', pub.link ]">
+        {{ pub.linkText }}
       </a>
-      <span>Pluralsight</span>
-      <span>2018</span>
-    </li>
-    <li>
-      <a href="https://www.oreilly.com/ideas/implement-oauth0-in-15-minutes-with-firebase" target="_blank" rel="noopener">
-        Implement OAuth in 15 minutes with Firebase
-      </a>
-      <span>O'Reilly</span>
-      <span>2018</span>
-    </li>
-    <li>
-      <a href="https://inedo.com/abc" target="_blank" rel="noopener">Programming Languages ABC++</a>
-      <span>Inedo</span>
-      <span>2015</span>
-    </li>
-    <li>
-      <a href="https://thebookpatch.com/BookStore/woodlands-the-coloring-book/f22fe985-6c40-4d69-b85c-f0e7a94a4783?isbn=9781620304853"
-        target="_blank" rel="noopener">Woodlands: The Coloring Book</a>
-      <span>Psychedelic Creations</span>
-      <span>2013</span>
+      <span>{{ pub.publisher }}</span>
+      <span>{{ pub.year }}</span>
     </li>
   </ul>
 </div>

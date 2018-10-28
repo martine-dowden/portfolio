@@ -71,5 +71,8 @@ export const routerTransition = trigger('routerTransition', [
 
   transition('speaking => *', left),
 
+  transition('presentation => *', left),
+  transition('* => presentation', right),
+
 ]);
 
