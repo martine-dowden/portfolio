@@ -25,8 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Deploy
 
 Run `ng build --prod --base-href "https://martine-dowden.github.io/portfolio/"` to create build.
-
-Build will be created in docs folder, commit changes to master.
+Run `ngh` to deploy to githb pages
 
 ## Further help
 
