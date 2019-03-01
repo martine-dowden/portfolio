@@ -3,7 +3,7 @@
   <h1>Speaking Engagements</h1>
 
   <mat-accordion>
-    <mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true">
       <mat-expansion-panel-header>
         <mat-panel-title>
           <span class="header">2019</span>
@@ -26,6 +26,7 @@
         <div class="april">
           <span>April</span>
           <ul>
+            <li><a href="http://codestock.org/" target="_blank" rel="noopener">Codestock</a></li>
             <li><a href="https://www.elevenfifty.org/" target="_blank" rel="noopener">Eleven Fifty Academy</a></li>
           </ul>
         </div>
@@ -34,6 +35,9 @@
         </div>
         <div class="june">
           <span>June</span>
+          <ul>
+            <li><a href="https://ndcoslo.com/" target="_blank" rel="noopener">NDC Oslo</a></li>
+          </ul>
         </div>
         <div class="july">
           <span>July</span>
@@ -55,7 +59,7 @@
         </div>
       </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           <span class="header">2018</span>
