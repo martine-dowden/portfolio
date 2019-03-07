@@ -13,16 +13,16 @@ export class GraphicsComponent implements OnInit {
       url: 'assets/img/branding/mobilify.png'
     },
     {
-      name: 'Mobilify Icon',
-      url: 'assets/img/branding/mobilify-icon.png'
+      name: 'Mayhem Game Calls Icon',
+      url: 'assets/img/branding/mayhem-icon.svg'
     },
     {
       name: 'Tekyn Logo',
       url: 'assets/img/branding/tekyn.png'
     },
     {
-      name: 'Librum Arcanum Logo',
-      url: 'assets/img/librum-logo.svg'
+      name: 'Andromeda Logo',
+      url: 'assets/img/branding/andromeda-fat.svg'
     },
     {
       name: 'Flexepark Horizontal Logo',
@@ -45,13 +45,29 @@ export class GraphicsComponent implements OnInit {
       url: 'assets/img/community2.svg'
     },
     {
-      name: 'Parking Lot',
-      url: 'assets/img/lot2.svg'
+      name: 'Mobilify Icon',
+      url: 'assets/img/branding/mobilify-icon.png'
     },
     {
       name: 'Lexi',
       url: 'assets/img/flexepark_car.svg'
-    }
+    },
+    {
+      name: 'Andromeda Icon',
+      url: 'assets/img/branding/icon-fat-tilt.svg'
+    },
+    {
+      name: 'cirrostyle',
+      url: 'assets/img/cirrostyle_icon.svg'
+    },
+    {
+      name: 'Librum Arcanum Logo',
+      url: 'assets/img/librum-logo.svg'
+    },
+    {
+      name: 'Mayhem Game Calls Logo',
+      url: 'assets/img/branding/mayhem-logo.svg'
+    },
   ];
 
   constructor() { }

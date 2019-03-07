@@ -29,7 +29,16 @@ export class SamplesComponent implements OnInit {
     },
     {
       flipped: false,
-      name: '.css { display: what? }',
+      name: 'cirrostyle',
+      icon: 'assets/img/cirrostyle_icon.svg',
+      description: 'Easily manage your vector images, converting them to custom-sized raster files on demand.',
+      links: [
+        { href: 'https://app.cirrostyle.com', text: 'App' },
+      ]
+    },
+    {
+      flipped: false,
+      name: '.css {display: what?}',
       icon: 'assets/img/css.svg',
       description: 'Demo of the different values for the css display property',
       links: [
@@ -57,16 +66,6 @@ export class SamplesComponent implements OnInit {
         { href: 'https://github.com/martine-dowden/accessibility-cookbook', text: 'Repo' }
       ]
     },
-    {
-      flipped: false,
-      name: 'Shifts On Demand',
-      icon: 'assets/img/sod_icon.svg',
-      description: 'Real-time staffing solution',
-      links: [
-        { href: 'https://www.shiftsondemand.com/', text: 'Site' },
-        { href: 'https://app.shiftsondemand.com/#/tabs/login/home', text: 'App' }
-      ]
-    }
   ];
 
   constructor() { }

@@ -48,9 +48,15 @@ h2 {
 
 .front {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
 }
 .back {
   transform: rotateY(180deg);
