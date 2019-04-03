@@ -14,7 +14,10 @@
             <h3>{{ project.name }}</h3>
             <p>{{ project.description }}</p>
             <div class="links">
-              <span *ngFor="let link of project.links"><a [href]="link.href" rel="noopener" target="_blank">{{link.text}}</a></span>
+              <span *ngFor="let link of project.links">
+                <a *ngIf="link.href" [href]="link.href" rel="noopener" target="_blank">{{link.text}}</a>
+                <a *ngIf="link.routerLink" [routerLink]="link.routerLink">{{link.text}}</a>
+              </span>
             </div>
           </div>
         </div>
@@ -22,3 +25,4 @@
     </div>
   </div>
 </div>
+

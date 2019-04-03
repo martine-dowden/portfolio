@@ -33,6 +33,13 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
+      link: 'accessibility-cookbook',
+      linkText: 'Accessibility Cookbook: 10 Easy Recipes',
+      publisher: 'M2D2',
+      year: '2019',
+      type: 'presentation'
+    },
+    {
       link: 'https://www.pluralsight.com/guides/styling-when-encapsulated-in-angular',
       linkText: 'Styling Web Components',
       publisher: 'Pluralsight',

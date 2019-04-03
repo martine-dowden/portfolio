@@ -45,6 +45,9 @@ export class PresentationComponent implements OnInit, OnDestroy {
         this.title = 'Care And Feeding of your Developers';
         this.url = 'https://bit.ly/care-feeding';
         break;
+      case 'accessibility-cookbook':
+        this.title = 'Accessibility Cookbook: 10 Easy Recipes';
+        this.url = 'https://bit.ly/2VaOROe';
     }
   }
 

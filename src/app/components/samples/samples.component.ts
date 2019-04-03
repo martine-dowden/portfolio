@@ -63,7 +63,8 @@ export class SamplesComponent implements OnInit {
       description: 'Accessibility Demo Site',
       links: [
         { href: 'https://martine-dowden.github.io/accessibility-cookbook/#/home', text: 'Site' },
-        { href: 'https://github.com/martine-dowden/accessibility-cookbook', text: 'Repo' }
+        { href: 'https://github.com/martine-dowden/accessibility-cookbook', text: 'Repo' },
+        { routerLink: ['/presentation/accessibility-cookbook'], text: 'Slides'}
       ]
     },
   ];
