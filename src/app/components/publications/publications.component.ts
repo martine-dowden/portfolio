@@ -33,6 +33,13 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
+      link: 'https://www.apress.com/gp/book/9781484248805',
+      linkText: 'Approachable Accessibility: Planning for Success',
+      publisher: 'Apress',
+      year: '2019',
+      type: 'book'
+    },
+    {
       link: 'accessibility-cookbook',
       linkText: 'Accessibility Cookbook: 10 Easy Recipes',
       publisher: 'M2D2',
