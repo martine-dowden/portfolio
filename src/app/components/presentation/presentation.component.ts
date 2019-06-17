@@ -48,6 +48,10 @@ export class PresentationComponent implements OnInit, OnDestroy {
       case 'accessibility-cookbook':
         this.title = 'Accessibility Cookbook: 10 Easy Recipes';
         this.url = 'https://bit.ly/2VaOROe';
+        break;
+      case 'mastering-shadow-dom':
+        this.title = 'Mastering Shadow Dom';
+        this.url = 'http://bit.ly/2WM6fJ6';
     }
   }
 
