@@ -33,6 +33,13 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
+      link: 'accessibility-basics-workshop',
+      linkText: 'Workshop: Accessibility Basics',
+      publisher: 'M2D2',
+      year: '2019',
+      type: 'presentation'
+    },
+    {
       link: 'mastering-shadow-dom',
       linkText: 'Mastering Shadow Dom',
       publisher: 'M2D2',

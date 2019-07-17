@@ -52,6 +52,11 @@ export class PresentationComponent implements OnInit, OnDestroy {
       case 'mastering-shadow-dom':
         this.title = 'Mastering Shadow Dom';
         this.url = 'https://bit.ly/2WM6fJ6';
+        break;
+      case 'accessibility-basics-workshop':
+        this.title = 'Accessibility Basics';
+        this.url = 'https://bit.ly/32wacWt';
+        break;
     }
   }
 
