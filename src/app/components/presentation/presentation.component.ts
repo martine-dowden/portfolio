@@ -57,9 +57,12 @@ export class PresentationComponent implements OnInit, OnDestroy {
         this.title = 'Accessibility Basics';
         this.url = 'https://bit.ly/32wacWt';
         break;
+      case 'tables-have-their-place':
+        this.title = 'Tables Have Their Place: Now let\’s make them fit';
+        this.url = 'https://bit.ly/2O3fw0q';
+        break;
     }
   }
-
   sanitize(url) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
