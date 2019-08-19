@@ -61,6 +61,10 @@ export class PresentationComponent implements OnInit, OnDestroy {
         this.title = 'Tables Have Their Place: Now let\’s make them fit';
         this.url = 'https://bit.ly/2O3fw0q';
         break;
+      case 'predictable-spell-casting':
+        this.title = 'Predictable Spell Casting: Guiding your users with CSS animations';
+        this.url = 'https://martine-dowden.github.io/Guiding-your-users-with-CSS-animations/#/';
+        break;
     }
   }
   sanitize(url) {
