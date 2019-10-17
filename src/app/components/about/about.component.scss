@@ -38,7 +38,16 @@
 .skill {
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5rem;
+  margin: .5rem 1rem;
+  -webkit-break-inside: avoid;
+  break-inside: avoid;
+  &:first-of-type { margin-top: 0; }
+  &::last-of-type { margin-bottom: 0;}
+}
+
+.skills {
+  column-width: 18rem;
+  margin: 1rem -1rem;
 }
 
 .value {
@@ -69,23 +78,6 @@
 }
 
 @media (min-width: 500px) {
-  .skills {
-    flex-wrap: wrap;
-    display: flex;
-  }
-  
-  .skill {
-    display: flex;
-    align-items: center;
-    flex-basis: 50%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    & > div {
-      flex-basis: 50%;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
-  }
 
   .projects {
     display: flex;
@@ -103,8 +95,3 @@
   }
 }
 
-@media (min-width: 855px) {
-  .skill {
-    flex-basis: 33%;
-  }
-}

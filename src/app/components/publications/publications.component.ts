@@ -33,6 +33,13 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
+      link: 'can-you-read-me-now',
+      linkText: 'Can You Read Me Now',
+      publisher: 'M2D2',
+      year: '2019',
+      type: 'presentation'
+    },
+    {
       link: 'predictable-spell-casting',
       linkText: 'Predictable Spell Casting: Guiding your users with CSS animations',
       publisher: 'M2D2',
