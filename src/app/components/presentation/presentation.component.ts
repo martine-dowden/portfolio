@@ -67,7 +67,7 @@ export class PresentationComponent implements OnInit, OnDestroy {
         break;
       case 'can-you-read-me-now':
         this.title = 'Can You Read Me Now';
-        this.url = 'http://bit.ly/2OYTFG3';
+        this.url = 'https://bit.ly/2OYTFG3';
         break;
     }
   }
