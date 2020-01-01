@@ -3,7 +3,7 @@
   <h1>Speaking Engagements</h1>
 
   <mat-accordion>
-    <mat-expansion-panel>
+    <mat-expansion-panel [expanded]="true">
       <mat-expansion-panel-header>
         <mat-panel-title>
           <span class="header">2020</span>
@@ -25,6 +25,9 @@
         </div>
         <div class="april">
           <span>April</span>
+          <ul>
+            <li><a href="https://indycode.amegala.com/" target="_blank" rel="noopener">Indy.Code()</a></li>
+          </ul>
         </div>
         <div class="may">
           <span>May</span>
@@ -52,7 +55,7 @@
         </div>
       </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           <span class="header">2019</span>
