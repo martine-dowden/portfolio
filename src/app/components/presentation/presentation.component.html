@@ -82,6 +82,15 @@
       <p>15% of the world’s population has some form of disability, but only very few of our websites are actually accessible. But what does that word mean anyway? Accessible?</p>
       <p>In this talk we will go over what accessibility means in the context of web content and how to get your team started in making sure your content can be accessed by all.</p>
     </div>
+    <div *ngSwitchCase="'typesetting-in-css'">
+      <p>From hands, to chisels, quills, the printing press, and now the web, a written record of our existence has been a constant throughout history. Languages, and how they are depicted, have evolved alongside the tools we use to render them. Often overlooked in design, text content is an integral part of the visual aspect of an application and CSS allows us to control and manipulate its look and feel.</p>
+      <p>In this talk we will cover a little bit about the history of typography leading up to where we are today, how to make decisions about fonts and their usage in our application, and the CSS properties that allow us to manipulate our type for a polished beautiful design.</p>
+      <p><a href="https://github.com/martine-dowden/typesetting-in-css" target="_blank" rel="noopener">Link to Repo</a></p>
+    </div>
+    <div *ngSwitchCase="'kiss-my-sass'">
+      <p>For almost 15 years we have had Syntactically Awesome Stylesheets (SASS) to help us write our CSS. But are we really using sass to its fullest? We know about variables, and nesting properties is nice, but what else can it do for us? There is a lot that SASS can do that often goes ignored or underutilized. Furthermore, mixins, includes, and functions, can change how we architect our code. In this talk we will go over some of the more advanced features SASS provides, what their benefits are, how they affect the CSS output created, and implementation use cases.</p>
+      <p><a href="https://github.com/martine-dowden/kiss-my-sass" target="_blank" rel="noopener">Link to Repo</a></p>
+    </div>
     <div *ngSwitchDefault>
       <pre> presenationId = {{ presentationId }} not found</pre>
     </div>

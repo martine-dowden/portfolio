@@ -33,6 +33,27 @@ export class PublicationsComponent implements OnInit {
   publications = [];
   publicationList = [
     {
+      link: 'https://www.apress.com/us/book/9781484257494',
+      linkText: 'Architecting CSS',
+      publisher: 'Apress',
+      year: '2020',
+      type: 'book'
+    },
+    {
+      link: 'kiss-my-sass',
+      linkText: 'Kiss My Sass',
+      publisher: 'M2D2',
+      year: '2020',
+      type: 'presentation'
+    },
+    {
+      link: 'typesetting-in-css',
+      linkText: 'Typesetting in CSS',
+      publisher: 'M2D2',
+      year: '2020',
+      type: 'presentation'
+    },
+    {
       link: 'can-you-read-me-now',
       linkText: 'Can You Read Me Now',
       publisher: 'M2D2',
@@ -41,7 +62,7 @@ export class PublicationsComponent implements OnInit {
     },
     {
       link: 'predictable-spell-casting',
-      linkText: 'Predictable Spell Casting: Guiding your users with CSS animations',
+      linkText: 'Predictable Spell Casting',
       publisher: 'M2D2',
       year: '2019',
       type: 'presentation'

@@ -69,6 +69,14 @@ export class PresentationComponent implements OnInit, OnDestroy {
         this.title = 'Can You Read Me Now';
         this.url = 'https://bit.ly/2OYTFG3';
         break;
+      case 'typesetting-in-css':
+        this.title = 'Typesetting in CSS: Using Typography to Enhance Your Design';
+        this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vSDNcX1OvVlBX8BAdK6eUDSgOuOnoln5G0-o3a3gHvxfI4PuKe-IZJ3cRlknhfgTHLWPVJjdgN1RSxi/embed';
+        break;
+      case 'kiss-my-sass':
+        this.title = 'KISS my Sass';
+        this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vS970KaaICUx-3WqUdx7AeQvpvvCvCHA_VJ_iJvxs9Ec95hSES6ChnVkAQlYK6t0MyIyx9AT9cj_hjS/embed';
+      break;
     }
   }
   sanitize(url) {
