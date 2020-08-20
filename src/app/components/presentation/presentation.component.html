@@ -91,9 +91,21 @@
       <p>For almost 15 years we have had Syntactically Awesome Stylesheets (SASS) to help us write our CSS. But are we really using sass to its fullest? We know about variables, and nesting properties is nice, but what else can it do for us? There is a lot that SASS can do that often goes ignored or underutilized. Furthermore, mixins, includes, and functions, can change how we architect our code. In this talk we will go over some of the more advanced features SASS provides, what their benefits are, how they affect the CSS output created, and implementation use cases.</p>
       <p><a href="https://github.com/martine-dowden/kiss-my-sass" target="_blank" rel="noopener">Link to Repo</a></p>
     </div>
+    <div *ngSwitchCase="'sprinkle-vast-greatness'">
+      <p>Scalable Vector Graphics, or SVGs, have become a lot more common on the web today. We see them as alternate options to downloading entire icon font libraries, as replacements for pngs and jpegs but what more can they do? Did you know you can access their code directly and manipulate them? Even let you users interact with them?</p>
+      <p>In this talk we will go over what the SVG code looks like, what it means, and how to generate it. Then we will delve into not only how to manipulate the styles but also how to add functionality in them such as links and click events.</p>
+      <p><a href="https://github.com/M2D2co/pumpkin-soup" target="_blank" rel="noopener">Link to Repo</a></p>
+    </div>
+    <div *ngSwitchCase="'architecting-for-accessibility'">
+      <p>Accessibility has been a part of development since the very beginning of the web. And although we have been talking about it since Tim Berners-Lee was working for CERN, to this day the struggles seem to remain the same. Not just how do we make our applications accessible, but also how do we integrate testing into our workflow? Who should be responsible for what and what questions do we even need to ask?</p>
+      <p>Instead of looking at code implementation, this talk will cover what questions to ask when getting started and how to read and understand the specification. We will then look at how different roles on the team are affected and the impact and changes including accessibility as part of development will have on the development cycle.</p>
+    </div>
     <div *ngSwitchDefault>
       <pre> presenationId = {{ presentationId }} not found</pre>
     </div>
+  </div>
+  <div class="resp-container" *ngIf="video">
+    <iframe [src]="sanitize(video)" frameborder="0" class="resp-iframe" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </div>
   <div class="resp-container" *ngIf="url">
     <iframe [src]="sanitize(url)" frameborder="0" class="resp-iframe" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

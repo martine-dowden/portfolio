@@ -14,6 +14,7 @@ export class PresentationComponent implements OnInit, OnDestroy {
   paramsSub: Subscription;
   url: SafeUrl;
   title: String;
+  video: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -52,6 +53,7 @@ export class PresentationComponent implements OnInit, OnDestroy {
       case 'mastering-shadow-dom':
         this.title = 'Mastering Shadow Dom';
         this.url = 'https://bit.ly/2WM6fJ6';
+        this.video = 'https://www.youtube.com/embed/gSqxp2cjSYQ';
         break;
       case 'accessibility-basics-workshop':
         this.title = 'Accessibility Basics';
@@ -72,11 +74,20 @@ export class PresentationComponent implements OnInit, OnDestroy {
       case 'typesetting-in-css':
         this.title = 'Typesetting in CSS: Using Typography to Enhance Your Design';
         this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vSDNcX1OvVlBX8BAdK6eUDSgOuOnoln5G0-o3a3gHvxfI4PuKe-IZJ3cRlknhfgTHLWPVJjdgN1RSxi/embed';
+        this.video = 'https://www.youtube.com/embed/Rrl_QxPX248';
         break;
       case 'kiss-my-sass':
         this.title = 'KISS my Sass';
         this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vS970KaaICUx-3WqUdx7AeQvpvvCvCHA_VJ_iJvxs9Ec95hSES6ChnVkAQlYK6t0MyIyx9AT9cj_hjS/embed';
-      break;
+        this.video = 'https://www.youtube.com/embed/cDpkzfiLY0M';
+        break;
+      case 'sprinkle-vast-greatness':
+        this.title = 'Sprinke Vast Greatness';
+        this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vRKS9vUJe_xLMTdiPT6DTPn1DiIUqCrcMclHqJdfTOj6yM5gUr4JhRLMP36r4Tkh-Rjcx3QLTTjkgbF/embed'
+        break;
+      case 'architecting-for-accessibility':
+        this.title = 'Architecting For Accessibility';
+        this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vQexSQvjH7rIh86hDs3swz90unfor679b6RTaWJB0V8RM3jWkYunM-39E1iHR_z5N8rktaesqdsOxJ9/embed'
     }
   }
   sanitize(url) {

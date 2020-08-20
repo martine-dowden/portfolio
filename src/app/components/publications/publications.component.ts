@@ -27,11 +27,30 @@ export class PublicationsComponent implements OnInit {
       text: 'Presentations',
       value: 'presentation',
       selected: false
+    },
+    {
+      text: 'Videos',
+      value: 'hasVideo',
+      selected: false
     }
   ];
 
   publications = [];
   publicationList = [
+    {
+      link: 'architecting-for-accessibility',
+      linkText: 'Architecting For Accessibility',
+      publisher: 'M2D2',
+      year: '2020',
+      type: 'presentation'
+    },
+    {
+      link: 'sprinkle-vast-greatness',
+      linkText: 'Sprinke Vast Greatness',
+      publisher: 'M2D2',
+      year: '2020',
+      type: 'presentation'
+    },
     {
       link: 'https://www.apress.com/us/book/9781484257494',
       linkText: 'Architecting CSS',
@@ -44,14 +63,16 @@ export class PublicationsComponent implements OnInit {
       linkText: 'Kiss My Sass',
       publisher: 'M2D2',
       year: '2020',
-      type: 'presentation'
+      type: 'presentation',
+      hasVideo: true
     },
     {
       link: 'typesetting-in-css',
       linkText: 'Typesetting in CSS',
       publisher: 'M2D2',
       year: '2020',
-      type: 'presentation'
+      type: 'presentation',
+      hasVideo: true
     },
     {
       link: 'can-you-read-me-now',
@@ -86,7 +107,8 @@ export class PublicationsComponent implements OnInit {
       linkText: 'Mastering Shadow Dom',
       publisher: 'M2D2',
       year: '2019',
-      type: 'presentation'
+      type: 'presentation',
+      hasVideo: true
     },
     {
       link: 'https://www.apress.com/gp/book/9781484248805',
@@ -174,6 +196,8 @@ export class PublicationsComponent implements OnInit {
     chip.selected = true;
     if (chip.value === 'all') {
       this.publications = _.cloneDeep(this.publicationList);
+    } else if (chip.value === 'hasVideo') {
+      this.publications = _.filter(_.cloneDeep(this.publicationList), (pub) => pub.hasVideo );
     } else {
       this.publications = _.filter(_.cloneDeep(this.publicationList), (pub) => pub.type === chip.value );
     }
