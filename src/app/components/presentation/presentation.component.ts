@@ -88,6 +88,7 @@ export class PresentationComponent implements OnInit, OnDestroy {
       case 'architecting-for-accessibility':
         this.title = 'Architecting For Accessibility';
         this.url = 'https://docs.google.com/presentation/d/e/2PACX-1vQexSQvjH7rIh86hDs3swz90unfor679b6RTaWJB0V8RM3jWkYunM-39E1iHR_z5N8rktaesqdsOxJ9/embed'
+        this.video = 'https://www.youtube.com/embed/kxLGQkwMOsA';
     }
   }
   sanitize(url) {

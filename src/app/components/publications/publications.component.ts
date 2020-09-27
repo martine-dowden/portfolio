@@ -42,7 +42,8 @@ export class PublicationsComponent implements OnInit {
       linkText: 'Architecting For Accessibility',
       publisher: 'M2D2',
       year: '2020',
-      type: 'presentation'
+      type: 'presentation',
+      hasVideo: true
     },
     {
       link: 'sprinkle-vast-greatness',
