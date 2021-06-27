@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
-import { SamplesComponent } from './components/samples/samples.component';
-import { PublicationsComponent } from './components/publications/publications.component';
-import { CaseStudyComponent } from './components/case-study/case-study.component';
-import { GraphicsComponent } from './components/graphics/graphics.component';
-import { SpeakingComponent } from './components/speaking/speaking.component';
-import { HomeComponent } from './components/home/home.component';
-import { PresentationComponent } from './components/presentation/presentation.component';
+import { AboutComponent } from './components/about.component';
+import { SamplesComponent } from './components/samples.component';
+import { PublicationsComponent } from './components/publications.component';
+import { CaseStudyComponent } from './components/case-study.component';
+import { GraphicsComponent } from './components/graphics.component';
+import { SpeakingComponent } from './components/speaking.component';
+import { HomeComponent } from './components/home.component';
+import { PresentationComponent } from './components/presentation.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, data: { state: 'home'} },
-  { path: 'about', component: AboutComponent, data: { state: 'about'} },
-  { path: 'projects', component: SamplesComponent, data: { state: 'projects'} },
-  { path: 'graphics', component: GraphicsComponent, data: { state: 'graphics'} },
-  { path: 'case-study', component: CaseStudyComponent, data: { state: 'case-study'} },
-  { path: 'publications', component: PublicationsComponent, data: { state: 'publications'} },
-  { path: 'speaking', component: SpeakingComponent, data: { state: 'speaking'} },
-  { path: 'presentation/:id', component: PresentationComponent, data: { state: 'presentation'} },
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'projects', component: SamplesComponent },
+  { path: 'graphics', component: GraphicsComponent },
+  { path: 'case-study', component: CaseStudyComponent },
+  { path: 'publications', component: PublicationsComponent },
+  { path: 'speaking', component: SpeakingComponent },
+  { path: 'presentation/:presentationId', component: PresentationComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
